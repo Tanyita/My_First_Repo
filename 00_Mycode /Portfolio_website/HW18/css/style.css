@@ -6,46 +6,53 @@ body {
     background: rgb(250, 247, 249);
 }
 
-.heroimage {
+.nika {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.heroimage img {
     width: 100%;
     height: auto;
     opacity: 100;
     position: relative;
     z-index: -1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: contain;
 }
 
-
-}
 h1 {
     font-size: 7vw;
 }
+
 h2 {
     /* align: center; */
-    
     font-size: 4vw;
     margin-block-start: 0.50em;
     margin-block-end: 0.30em;
 }
+
 h3 {
     font-size: 4vw;
 }
+
 h5 {
     font-size: 1vw;
     color: #366EFF;
 }
+
 h6 {
     font-size: 1vw;
     color: #366EFF;
 }
+
 nav {
     padding: 1vw;
     background-color: white;
     position: sticky;
     top: 0;
 }
+
 p {
     font-size: 1vw;
     margin-block-start: 0.5em;
@@ -54,20 +61,25 @@ p {
     margin-inline-end: 0px;
 }
 
+
 /* Classes and document elements  */
+
 .text {
     position: absolute;
     text-align: left;
-    top: 36vh;
+    top: 20vh;
     left: 8vw;
     font-size: 20px;
+    z-index: -1;
 }
+
 .image {
     width: 100%;
     height: auto;
     opacity: 100;
     position: relative;
 }
+
 .workcontainer {
     margin-left: 165px;
     margin-right: 100px;
@@ -75,23 +87,19 @@ p {
     display: flex;
     align-items: center;
 }
+
 .Aboutme {
-    /* margin-bottom: 20vh;
-    margin-right: 10vh;
-    margin-left: 15vh; */
-    /* margin-bottom: 200px; */
-    /* margin-right: 100px; */
-    /* margin-left: 165px; */
-    
     text-align: center;
     display: flex;
     align-items: center;
 }
+
 .WaveImage {
     width: 50vw;
     float: right;
     display: flex;
 }
+
 .button {
     background-color: #366EFF;
     border-radius: 1vw;
@@ -99,54 +107,53 @@ p {
     color: white;
     padding: 2vw 4vw;
     /* padding: 15px 32px; */
-    
     text-align: center;
     text-decoration: none;
     display: inline-block;
     /* font-size: 16px; */
-    
     font-size: 1vw;
     padding: 2vw 2vw;
     /* margin: 4px 2px; */
-    
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
+
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 .grid-container {
     display: grid;
     grid-column-gap: 0px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    align-content: center;
     grid-gap: 10px;
     padding: 10px;
-    margin-right: 5vw;
+    margin-left: 5vw;
     margin-bottom: 10vw;
-    /* margin-right: 100px; */
-    
-    overflow-y: visible;
-    overflow-x: visible;
+    justify-content: space-evenly;
 }
+
 .grid-item {
     /* padding: 20px; */
     /* font-size: 30px; */
-    
     text-align: left;
     /* margin-left: 140px; */
-    
     margin-left: 10vw;
 }
+
 #gradients {
     width: 100%;
     height: auto;
     opacity: 100;
     top: -60vw;
-    float: center;
     /* top: 2595.81px; */
 }
+
 .column {
     float: left;
     width: 50%;
@@ -157,45 +164,63 @@ p {
     width: 800px;
     padding: 50px;
 }
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 @media screen and (max-width: 500px) {
     div.column {
         width: 100%;
     }
-    
     div#box {
         width: 50%;
     }
-    
     div.grid-container {
         width: 50%;
     }
-    
     div.grid_item {
         margin-left: 80px;
         width: 50%;
     }
-    
     div.grid-container {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        margin-right: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-right: 10vw;
     }
-    
-    #nika {
-        width: 50%;
+    .heroimage {
+        width: 100%;
         height: auto;
         opacity: 100;
         position: relative;
         z-index: -2;
     }
+    img {
+        width: 100%;
+        height: auto;
+        opacity: 100;
+    }
 }
 
+
+/* margin-bottom: 20vh;
+    margin-right: 10vh;
+    margin-left: 15vh; */
+
+
+/* margin-bottom: 200px; */
+
+
+/* margin-right: 100px; */
+
+
+/* margin-left: 165px; */
+
+
 /* Trash below this point  */
+
 
 /* #hello-image {
      width: 30%;
@@ -204,20 +229,25 @@ p {
  }
   */
 
+
 /* .container {
      position: relative;
  } */
+
 
 /* #box {
      position: relative;
      display: flex;
  } */
 
+
 /* TODO */
+
 
 /* * {
      box-sizing: border-box;
  } */
+
 
 /* .block {
      display: grid;
@@ -230,6 +260,7 @@ p {
      align-content: space-evenly;
  } */
 
+
 /* .workgrid {
      display: grid;
      grid-template-rows: 50% 50%;
@@ -237,21 +268,25 @@ p {
      -ms-grid-column-align: center;
  } */
 
+
 /* #paloaltoblock {
      margin: 140px;
      width: 100%;
      padding: 30px;
  } */
 
+
 /* .workgrid {
      align-content: center;
  } */
+
 
 /* #CFGIblock {
      margin: 140px;
      width: 100%;
      padding: 30px;
  } */
+
 
 /* .landingpage {
         display: grid;
@@ -262,7 +297,7 @@ p {
     
     .navigation {
         width: 100%;
-        position: top left;} */
+        position: top left;
 
 /* .landingpage {
         height: 100%;
@@ -274,12 +309,14 @@ p {
         background-repeat: no-repeat;
         background-position: center;} */
 
+
 /* .text {
         align-content: flex-start;
         justify-content: flex-start;
         width: 30%;
         padding: 20px 40px;
         color: rgb(18, 16, 20);} */
+
 
 /* #backgroundimage {
         position: absolute;
@@ -292,6 +329,7 @@ p {
         justify-content: left;
         z-index: -1;
     } */
+
 
 /* .left {
                 float: left;
@@ -309,10 +347,12 @@ p {
                 height: auto;
             }  */
 
+
 /* margin-top: 90px;
     margin-right: 100px;
     text-align: left;
     /* padding: 140px 90px; */
+
 
 /* .grid_item1 {
          display: inline-block;
@@ -324,6 +364,7 @@ p {
          width: 800px;
          padding: 50px;
             } */
+
 
 /* .button {
     display: inline-block;
@@ -365,6 +406,7 @@ p {
     right: 0;
 } */
 
+
 /* .button {
     background-color: #366EFF;
     border-radius: 8px;
@@ -380,6 +422,7 @@ p {
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 } */
+
 
 /* .workgrid {
     grid-column-start: 1;
@@ -416,6 +459,7 @@ button:hover {
     grid-template-areas: "paloaltogrid CFGI";
 } */
 
+
 /* #paloaltogrid {
     box-sizing: content-box;
     width: 500px;
@@ -431,5 +475,6 @@ button:hover {
     margin: 10px;
     padding: 10px;
 } */
+
 
 /* .content

@@ -1,0 +1,383 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    background: rgb(250, 247, 249);
+}
+
+#hello-image {
+    /* position: absolute; */
+    width: 30%;
+    float: left;
+    /* height: 627px; */
+    /* left: 1399px; */
+    /* top: 85px; */
+    /* background: url(Images/hero-image.png); */
+    filter: drop-shadow(0px 40px 40px rgba(0, 0, 0, 0.2));
+}
+
+
+/* .landingpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "hello hello-image" "leftSidebar rightContent rightContent";
+    }
+    
+    .navigation {
+        width: 100%;
+        position: top left;} */
+
+
+/* .landingpage {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+        background-position: center;} */
+
+
+/* .text {
+        align-content: flex-start;
+        justify-content: flex-start;
+        width: 30%;
+        padding: 20px 40px;
+        color: rgb(18, 16, 20);} */
+
+
+/* #backgroundimage {
+        position: absolute;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+        align-content: left;
+        align-items: left;
+        justify-content: left;
+        z-index: -1;
+    } */
+
+.container {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 200px;
+    left: 160px;
+    /* font-size: 20px; */
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    position: relative;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+nav {
+    padding: 20pt;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.workgrid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 40% 60%;
+    -ms-grid-column-align: center;
+}
+
+#paloaltoblock {
+    margin: 140px;
+    width: 100%;
+    padding: 30px;
+}
+
+.workgrid {
+    align-content: center;
+}
+
+#CFGIblock {
+    margin: 140px;
+    width: 100%;
+    padding: 30px;
+}
+
+h2 {
+    /* align: center; */
+    font-size: 4vw;
+    margin-block-start: 0.50em;
+    margin-block-end: 0.30em;
+}
+
+h5 {
+    font-size: 1vw;
+    color: #366EFF;
+}
+
+
+/* TODO: workcontainer and Aboutme are same join them in one reusable class and update html */
+
+.workcontainer {
+    margin-left: 165px;
+    margin-right: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.Aboutme {
+    margin-bottom: 200px;
+    margin-left: 165px;
+    margin-right: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#wave_image {
+    width: 50%;
+    float: right;
+    width: 500px;
+    /* padding: 10px; */
+}
+
+.button {
+    background-color: #366EFF;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1000px 1000px;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-right: 100px;
+    align-content: space-evenly;
+}
+
+.grid_item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 140px;
+}
+
+h6 {
+    font-size: 1vw;
+    color: #366EFF;
+}
+
+p {
+    font-size: 1vw;
+    margin-block-start: 0.5em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#gradients {
+    z-index: -2;
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    position: absolute;
+    top: 3595.81px;
+}
+
+.block {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1000px 1000px;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-right: 100px;
+    align-content: space-evenly;
+}
+
+.separator {
+    width: 500px;
+}
+
+.left {
+    float: left;
+    text-align: left;
+    margin-left: 140px;
+    width: 800px;
+    padding: 50px;
+}
+
+.right {
+    float: right;
+    margin-right: 350px;
+    margin-left: 300px;
+    width: 800px;
+    height: auto;
+}
+
+
+/* margin-top: 90px;
+    margin-right: 100px;
+    text-align: left;
+    /* padding: 140px 90px; */
+
+
+/* .grid_item1 {
+         display: inline-block;
+         margin: 20px;
+         padding: 20px;
+         font-size: 30px;
+         text-align: left;
+         margin-left: 140px;
+         width: 800px;
+         padding: 50px;
+            } */
+
+
+/* .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+        }
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+} */
+
+
+/* .button {
+    background-color: #366EFF;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+} */
+
+
+/* .workgrid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-content: center;
+    display: grid;
+    height: 400px;
+    grid-template-rows: 30% 50%;
+    grid-template-columns: 50% 70%;
+}
+
+.flexcontainer {
+    display: grid;
+    grid: 150px / auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.flexcontainer>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+/* .flexContainer {
+    margin: 0px 5%;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 70%;
+    grid-template-areas: "paloaltogrid CFGI";
+} */
+
+
+/* #paloaltogrid {
+    box-sizing: content-box;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    text-align: left;
+}
+
+
+/* .flexContainer {
+    display: flex;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+} */
+
+
+/* .content
+Widtg 100%
+Image backrnd=url.squgle
+Fit cover */

@@ -6,46 +6,46 @@ body {
     background: rgb(250, 247, 249);
 }
 
-img {
+.heroimage {
     width: 100%;
     height: auto;
     opacity: 100;
     position: relative;
-    z-index: -2;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+}
 h1 {
-    font-size: 5vw;
+    font-size: 7vw;
 }
-
 h2 {
     /* align: center; */
+    
     font-size: 4vw;
     margin-block-start: 0.50em;
     margin-block-end: 0.30em;
 }
-
 h3 {
-    font-size: 2vw;
+    font-size: 4vw;
 }
-
 h5 {
     font-size: 1vw;
     color: #366EFF;
 }
-
 h6 {
     font-size: 1vw;
     color: #366EFF;
 }
-
 nav {
     padding: 1vw;
     background-color: white;
     position: sticky;
     top: 0;
 }
-
 p {
     font-size: 1vw;
     margin-block-start: 0.5em;
@@ -54,27 +54,20 @@ p {
     margin-inline-end: 0px;
 }
 
-
 /* Classes and document elements  */
-
 .text {
     position: absolute;
-    /* top: 200px;
-    left: 160px; */
-    top: 15vh;
-    left: 10vw;
-    /* font-size: 20px; */
-    z-index: -1;
+    text-align: left;
+    top: 36vh;
+    left: 8vw;
+    font-size: 20px;
 }
-
-.picture {
-    /* width: 20vw; */
-    min-width: 100px;
+.image {
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    position: relative;
 }
-
-
-/* TODO: workcontainer and Aboutme are same join them in one reusable class and update html */
-
 .workcontainer {
     margin-left: 165px;
     margin-right: 100px;
@@ -82,7 +75,6 @@ p {
     display: flex;
     align-items: center;
 }
-
 .Aboutme {
     /* margin-bottom: 20vh;
     margin-right: 10vh;
@@ -90,16 +82,16 @@ p {
     /* margin-bottom: 200px; */
     /* margin-right: 100px; */
     /* margin-left: 165px; */
+    
     text-align: center;
     display: flex;
     align-items: center;
 }
-
 .WaveImage {
-    /* width: 50vw; */
+    width: 50vw;
     float: right;
+    display: flex;
 }
-
 .button {
     background-color: #366EFF;
     border-radius: 1vw;
@@ -107,52 +99,54 @@ p {
     color: white;
     padding: 2vw 4vw;
     /* padding: 15px 32px; */
+    
     text-align: center;
     text-decoration: none;
     display: inline-block;
     /* font-size: 16px; */
-    font-size: 2vw;
-    padding: 1vw 2vw;
+    
+    font-size: 1vw;
+    padding: 2vw 2vw;
     /* margin: 4px 2px; */
+    
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
-
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
 .grid-container {
     display: grid;
     grid-column-gap: 0px;
-    grid-template-columns: auto auto;
-    /* grid-template-rows: 1000px 1000px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
-    margin-right: 10vw;
+    margin-right: 5vw;
+    margin-bottom: 10vw;
     /* margin-right: 100px; */
-    align-content: space-evenly;
+    
+    overflow-y: visible;
+    overflow-x: visible;
 }
-
 .grid-item {
     /* padding: 20px; */
     /* font-size: 30px; */
+    
     text-align: left;
     /* margin-left: 140px; */
+    
     margin-left: 10vw;
 }
-
 #gradients {
-    z-index: -2;
     width: 100%;
     height: auto;
     opacity: 100;
-    position: relative;
     top: -60vw;
+    float: center;
     /* top: 2595.81px; */
 }
-
 .column {
     float: left;
     width: 50%;
@@ -163,38 +157,45 @@ p {
     width: 800px;
     padding: 50px;
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div.column {
-        width: 85%;
+        width: 100%;
     }
+    
     div#box {
         width: 50%;
     }
+    
     div.grid-container {
         width: 50%;
     }
+    
     div.grid_item {
         margin-left: 80px;
         width: 50%;
     }
+    
     div.grid-container {
-        display: grid;
-        grid-template-columns: 300px 300px;
-        grid-template-rows: 200px 200px;
-        margin-right: 100px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-right: 5%;
+    }
+    
+    #nika {
+        width: 50%;
+        height: auto;
+        opacity: 100;
+        position: relative;
+        z-index: -2;
     }
 }
 
-
 /* Trash below this point  */
-
 
 /* #hello-image {
      width: 30%;
@@ -203,25 +204,20 @@ p {
  }
   */
 
-
 /* .container {
      position: relative;
  } */
-
 
 /* #box {
      position: relative;
      display: flex;
  } */
 
-
 /* TODO */
-
 
 /* * {
      box-sizing: border-box;
  } */
-
 
 /* .block {
      display: grid;
@@ -234,7 +230,6 @@ p {
      align-content: space-evenly;
  } */
 
-
 /* .workgrid {
      display: grid;
      grid-template-rows: 50% 50%;
@@ -242,25 +237,21 @@ p {
      -ms-grid-column-align: center;
  } */
 
-
 /* #paloaltoblock {
      margin: 140px;
      width: 100%;
      padding: 30px;
  } */
 
-
 /* .workgrid {
      align-content: center;
  } */
-
 
 /* #CFGIblock {
      margin: 140px;
      width: 100%;
      padding: 30px;
  } */
-
 
 /* .landingpage {
         display: grid;
@@ -273,7 +264,6 @@ p {
         width: 100%;
         position: top left;} */
 
-
 /* .landingpage {
         height: 100%;
         width: 100%;
@@ -284,14 +274,12 @@ p {
         background-repeat: no-repeat;
         background-position: center;} */
 
-
 /* .text {
         align-content: flex-start;
         justify-content: flex-start;
         width: 30%;
         padding: 20px 40px;
         color: rgb(18, 16, 20);} */
-
 
 /* #backgroundimage {
         position: absolute;
@@ -304,7 +292,6 @@ p {
         justify-content: left;
         z-index: -1;
     } */
-
 
 /* .left {
                 float: left;
@@ -322,12 +309,10 @@ p {
                 height: auto;
             }  */
 
-
 /* margin-top: 90px;
     margin-right: 100px;
     text-align: left;
     /* padding: 140px 90px; */
-
 
 /* .grid_item1 {
          display: inline-block;
@@ -339,7 +324,6 @@ p {
          width: 800px;
          padding: 50px;
             } */
-
 
 /* .button {
     display: inline-block;
@@ -381,7 +365,6 @@ p {
     right: 0;
 } */
 
-
 /* .button {
     background-color: #366EFF;
     border-radius: 8px;
@@ -397,7 +380,6 @@ p {
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 } */
-
 
 /* .workgrid {
     grid-column-start: 1;
@@ -434,7 +416,6 @@ button:hover {
     grid-template-areas: "paloaltogrid CFGI";
 } */
 
-
 /* #paloaltogrid {
     box-sizing: content-box;
     width: 500px;
@@ -450,6 +431,5 @@ button:hover {
     margin: 10px;
     padding: 10px;
 } */
-
 
 /* .content

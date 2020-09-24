@@ -201,8 +201,11 @@ p {
     z-index: -5;
 } */
 
-#container {
+
+/* .container {
     display: flex;
+    width: 100%;
+    height: auto;
     opacity: 100;
     bottom: 0;
     left: 0;
@@ -214,27 +217,84 @@ p {
     position: absolute;
     width: 100%;
     height: auto;
-    bottom: 3vw;
-    left: 4vw;
+
+} */
+
+.footer {
+    background-image: url("../images/footer3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+    z-index: -1;
 }
 
-.flex-container {
+.footer-muse {
+    width: 17vw;
+    padding: 7vw;
+    position: relative;
+}
+
+.columns {
+    column-count: 5;
+    column-gap: 5vw;
+    column-width: 20vw;
+    position: relative;
+    margin-left: 35vw;
+    bottom: 20vw;
+    font-size: 1.75vw;
+}
+
+.line {
+    position: relative;
+    margin-left: 35vw;
+    bottom: 17vw;
+}
+
+.email {
+    text-align: left;
+    position: relative;
+    margin-left: 35vw;
+    bottom: 20vw;
+    font-size: 1.25vw;
+    margin-top: 6vw;
+}
+
+
+/* #grid-container1 {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2195f300;
+    padding: 10px;
+    left: 17 vw
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.002);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+ */
+
+
+/* .flex-container {
     display: flex;
     background-color: rgba(30, 143, 255, 0);
     flex-wrap: wrap;
     justify-content: flex-start;
-    position: absolute;
-    bottom: 15vw;
-    left: 45vw;
+    position: relative;
+    bottom: 18vw;
+    left: 35vw;
 }
 
 .flex-container>div {
     background-color: #f1f1f100;
     margin: 10px;
     text-align: left;
-    line-height: 75px;
     font-size: 1.75vw;
-}
+} */
 
 @media screen and (max-width: 700px) {
     #box {

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
     <title>Tanja Milutinovic Portfolio</title>
-    /Users/rozecipelice/Documents/GitHub/My_First_Repo/00_Mycode /Portfolio_website/HW18/index.js
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap' rel='stylesheet'>
@@ -15,13 +16,20 @@
     <link rel='stylesheet' href='css/style.css' type='text/css'>
 
     <nav class="navigation">
-        <ol>
-            <a href='#work'>WORK</a> |
-            <a href='#about'>ABOUT</a> |
-            <a href='#contact'>CONTACT</a> |
-            <a href='#more'>MORE</a> |
-            <a href='#info'>INFO</a> |
-        </ol>
+        <div class="navigationbar">
+            <ol>
+                <a href='#work'>WORK</a> |
+                <a href='#about'>ABOUT</a> |
+                <a href='#contact'>CONTACT</a> |
+                <a href='#more'>MORE</a> |
+                <a href='#info'>INFO</a> |
+                <!-- <input type="text" placeholder="Search.." id="search"> -->
+                <!-- <i class="fa fa-bars"></i> -->
+                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+            </ol>
+
+        </div>
+
     </nav>
 </head>
 
@@ -98,8 +106,10 @@
     </section>
 
     <footer class="footer">
-        <div>
-            <img class="footer-muse" src="images/atina2.png">
+        <div class="footer-muse">
+            <img src="images/atina1.png">
+            <img src="images/atinagum.png">
+            <img src="images/atinagumpop.png">
         </div>
 
         <div id="footer-content">
@@ -115,39 +125,14 @@
             </div>
 
         </div>
+
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="index.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="flex-container">
-            <div>WORK</div>
-            <div>ABOUT ME</div>
-            <div>RESUME</div>
-            <div>CONTACT</div>
-            <div>MORE INFO</div>
-        </div> -->
     </footer>
-
 </body>
 
 </html>
